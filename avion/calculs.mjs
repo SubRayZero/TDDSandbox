@@ -1,5 +1,6 @@
-function flyable(poidsVide, poidsCharge, poidsMaxDecollage, poidsMaxSansCarburant, poidsMaxAtterrissage, capaciteCarburantMax, poidsMaxPassagers, nbPassagers) {
 
+
+export function flyable(poidsVide, poidsCharge, poidsMaxDecollage, poidsMaxSansCarburant, poidsMaxAtterrissage, capaciteCarburantMax, poidsMaxPassagers, nbPassagers) {
     if (poidsVide >= poidsCharge ||
         poidsVide >= poidsMaxDecollage ||
         poidsVide >= poidsMaxSansCarburant ||
@@ -38,7 +39,3 @@ function flyable(poidsVide, poidsCharge, poidsMaxDecollage, poidsMaxSansCarburan
 
     return true;
 }
-
-module.exports = {
-    flyable: flyable
-};
